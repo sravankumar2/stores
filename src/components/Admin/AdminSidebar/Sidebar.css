@@ -1,0 +1,46 @@
+.sidebar {
+  width: 220px;
+  margin-top: 42px;
+  min-height: 100vh;
+  background-color: #fff;
+}
+.sidebarItemWrapper {
+  width: 100%;
+  display: flex;
+  margin-bottom: 8px;
+}
+.sidebarActiveBorder {
+  border: 2px solid #fa4549 !important;
+}
+.sidebarBorder {
+  border: 2px solid transparent;
+  padding: 10px 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.sidebarItem {
+  width: 100%;
+  display: inline-block;
+  font-weight: 500;
+  margin-left: 8px;
+}
+.menuIconWrapper {
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 8px;
+  padding: 12px;
+  margin-left: 20px;
+  color: #8a8f9b !important;
+}
+.menuIconWrapper > svg {
+  color: #8a8f9b !important;
+}
+.menuActiveIconWrapper {
+  color: #fa4549 !important;
+  background-color: #feeaeb !important;
+}
+.menuActiveIconWrapper > svg {
+  color: #fa4549 !important;
+}

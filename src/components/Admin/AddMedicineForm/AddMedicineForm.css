@@ -1,0 +1,75 @@
+.form-container {
+  width: 700px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 5px 4px #fda9aa;
+  border-radius: 8px;
+  position: relative;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  font-weight: 400;
+  color: #fa4547;
+  text-align: center;
+}
+
+.closeButton {
+  position: absolute;
+  top: 28px;
+  color: #fa4547;
+  font-size: 24px;
+  right: 32px;
+  cursor: pointer;
+}
+form {
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-input-wrapper {
+  margin: 20px 12px;
+  width: 250px;
+}
+.form-input-wrapper:nth-child(n + 3) {
+  width: 25%;
+}
+.form-input-wrapper label {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+.form-input-wrapper input {
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #feeaeb;
+  border-radius: 0.25rem;
+  outline: none;
+  transition: all 0.15s ease-in-out;
+}
+.form-input-wrapper input:focus {
+  box-shadow: 0 0 2px 4px #fda9aa;
+}
+.form-input-wrapper input:disabled {
+  background: #feeaeb;
+  color: #000;
+}
+
+.add-to-inventory-btn {
+  color: #fa4549 !important;
+  background-color: #feeaeb !important;
+  margin: 8px auto 0 !important;
+}
+.add-to-inventory-btn > svg {
+  font-size: 16px;
+}

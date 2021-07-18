@@ -1,0 +1,26 @@
+.inventory-section {
+  background-color: #fff8f8;
+  flex-grow: 1;
+  margin-left: 24px;
+  padding: 24px;
+  border-radius: 16px;
+}
+.inventory-section h2 {
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+.add-btn {
+  color: #fa4549 !important;
+  background-color: #feeaeb !important;
+}
+.add-btn > svg {
+  font-size: 16px;
+}
+.form-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}

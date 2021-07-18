@@ -1,0 +1,13 @@
+.topbar {
+  background-color: #fff !important;
+  color: #fa4549 !important;
+  box-shadow: none !important;
+  padding: 16px 16px 8px;
+}
+.topbar h5 svg {
+  font-size: 3rem !important;
+}
+.topbar button {
+  color: #fa4549 !important;
+  background-color: #feeaeb !important;
+}

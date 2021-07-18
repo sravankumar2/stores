@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import AdminPanel from './components/Admin/AdminPanel'
+import Login from './components/Login'
+import Topbar from './components/Topbar'
+import ExecutivePanel from './components/Executive/ExecutivePanel'
+import { useSelector } from 'react-redux'
 
 function App() {
+  const user = useSelector((state) => state.user.user)
+  console.log(user)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Topbar />
+      <Switch>
+        {user === null && <Route path='/' component={Login} />}
+        {user?.username === 'test-admin' && (
+          <Route path='/' component={AdminPanel} />
+        )}
+        {user?.username === 'test-sales' && (
+          <Route path='/' component={ExecutivePanel} />
+        )}
+      </Switch>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App

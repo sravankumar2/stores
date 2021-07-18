@@ -1,0 +1,13 @@
+.table-container {
+  margin-top: 48px;
+}
+
+td,
+th {
+  border-color: #fa4547 !important;
+  font-size: 16px !important;
+  letter-spacing: 0.8px !important;
+}
+tbody tr:last-child td {
+  border-color: transparent !important;
+}

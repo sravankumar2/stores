@@ -1,0 +1,76 @@
+.creat-order-section {
+  background-color: #fff8f8;
+  flex-grow: 1;
+  margin-left: 24px;
+  padding: 24px;
+  border-radius: 16px;
+}
+.creat-order-section h2 {
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+.forms-wrapper {
+  display: flex;
+}
+.add-to-cart-form {
+  display: flex;
+  width: 424px;
+  align-items: center;
+  justify-content: stretch;
+}
+.add-to-cart-form label {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+.add-to-cart-form input {
+  display: block;
+  height: 38px;
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #feeaeb;
+  border-radius: 0.25rem;
+  outline: none;
+  transition: all 0.15s ease-in-out;
+}
+.add-to-cart-icon svg {
+  color: #fa4547;
+  font-size: 36px;
+  margin-top: 20px;
+}
+.qty-input {
+  margin-top: 24px;
+  margin-left: 8px;
+  width: 82px;
+}
+.create-order-form {
+  background-color: #fff;
+  border: 1px solid #feeaeb;
+  border-radius: 12px;
+  max-width: 60%;
+  min-height: 300px;
+  margin-top: 36px;
+  align-items: flex-start;
+}
+.create-order-form > table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.create-order-form > table td,
+th {
+  border-bottom: 1px solid #fa4547 !important;
+  font-size: 16px !important;
+  text-align: center;
+  letter-spacing: 0.8px !important;
+  padding: 12px 8px;
+}
+.create-order-btn {
+  color: #fa4549 !important;
+  background-color: #feeaeb !important;
+  margin: 16px auto !important;
+}
